@@ -57,6 +57,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Portfolio specific colors
+        portfolio: {
+          cream: "hsl(var(--portfolio-cream))",
+          "purple-dark": "hsl(var(--portfolio-purple-dark))",
+          "purple-mid": "hsl(var(--portfolio-purple-mid))",
+          "purple-bright": "hsl(var(--portfolio-purple-bright))",
+          "gradient-1": "hsl(var(--portfolio-gradient-1))",
+          "gradient-2": "hsl(var(--portfolio-gradient-2))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
