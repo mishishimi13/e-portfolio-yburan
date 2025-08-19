@@ -41,12 +41,12 @@ export default function Index() {
       {/* Hero Section */}
       <section id="home" className="px-4 md:px-16 py-12">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
-          {/* Profile Photo - Now first on mobile, beside content on desktop */}
-          <div className="flex justify-center lg:order-2">
+          {/* Profile Photo - Below content on mobile, beside content on desktop */}
+          <div className="flex justify-center order-2 lg:order-2">
             <div className="w-80 h-96 bg-gray-300 rounded-lg flex-shrink-0"></div>
           </div>
 
-          <div className="space-y-8 lg:order-1 flex-1">
+          <div className="space-y-8 order-1 lg:order-1 flex-1">
             <h1 className="font-lilita text-4xl md:text-6xl text-portfolio-cream drop-shadow-lg">
               RICA MAE M. YBURAN
             </h1>
