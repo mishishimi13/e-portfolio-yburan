@@ -1,38 +1,59 @@
 import { Link } from "react-router-dom";
 
 export default function Index() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-portfolio-gradient-1 to-portfolio-gradient-2">
-      {/* Header Navigation */}
-      <header className="px-4 py-4 md:px-16">
+      {/* Sticky Header Navigation */}
+      <header className="sticky top-0 z-50 px-4 py-4 md:px-16 bg-gradient-to-r from-portfolio-gradient-1/95 to-portfolio-gradient-2/95 backdrop-blur-sm">
         <nav className="max-w-6xl mx-auto bg-portfolio-purple-mid/50 border border-portfolio-purple-bright rounded-3xl px-8 py-6">
           <div className="flex justify-end">
             <div className="flex items-center gap-12">
-              <Link to="/" className="font-lilita text-2xl md:text-3xl text-portfolio-cream hover:text-portfolio-purple-bright transition-colors">
+              <button
+                onClick={() => scrollToSection('home')}
+                className="font-lilita text-2xl md:text-3xl text-portfolio-cream hover:text-portfolio-purple-bright transition-colors cursor-pointer"
+              >
                 HOME
-              </Link>
-              <Link to="/experience" className="font-lilita text-2xl md:text-3xl text-portfolio-cream hover:text-portfolio-purple-bright transition-colors">
+              </button>
+              <button
+                onClick={() => scrollToSection('experience')}
+                className="font-lilita text-2xl md:text-3xl text-portfolio-cream hover:text-portfolio-purple-bright transition-colors cursor-pointer"
+              >
                 EXPERIENCE
-              </Link>
-              <Link to="/contact" className="font-lilita text-2xl md:text-3xl text-portfolio-cream hover:text-portfolio-purple-bright transition-colors">
+              </button>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="font-lilita text-2xl md:text-3xl text-portfolio-cream hover:text-portfolio-purple-bright transition-colors cursor-pointer"
+              >
                 CONTACT
-              </Link>
+              </button>
             </div>
           </div>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section className="px-4 md:px-16 py-12">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+      <section id="home" className="px-4 md:px-16 py-12">
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
+          {/* Profile Photo - Now first on mobile, beside content on desktop */}
+          <div className="flex justify-center lg:order-2">
+            <div className="w-80 h-96 bg-gray-300 rounded-lg flex-shrink-0"></div>
+          </div>
+
+          <div className="space-y-8 lg:order-1 flex-1">
             <h1 className="font-lilita text-4xl md:text-6xl text-portfolio-cream drop-shadow-lg">
               RICA MAE M. YBURAN
             </h1>
             <p className="font-lilita text-lg md:text-2xl text-portfolio-cream leading-relaxed">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             </p>
-            
+
             {/* Social Media Icons */}
             <div className="flex gap-4">
               <div className="w-12 h-12 bg-portfolio-cream rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
@@ -51,11 +72,6 @@ export default function Index() {
                 </svg>
               </div>
             </div>
-          </div>
-          
-          {/* Profile Photo Placeholder */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="w-80 h-96 bg-gray-300 rounded-lg"></div>
           </div>
         </div>
       </section>
@@ -227,7 +243,7 @@ export default function Index() {
       </div>
 
       {/* Experience Section */}
-      <section className="px-4 md:px-16 py-16 bg-gradient-to-r from-purple-900 to-yellow-200">
+      <section id="experience" className="px-4 md:px-16 py-16 bg-gradient-to-r from-purple-900 to-yellow-200">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-lilita text-4xl md:text-6xl text-portfolio-cream drop-shadow-lg">
             EXPERIENCE
@@ -235,6 +251,23 @@ export default function Index() {
           <div className="mt-16 text-center">
             <p className="font-lilita text-2xl text-portfolio-cream">
               Experience section content will be added here.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="px-4 md:px-16 py-16 bg-gradient-to-r from-portfolio-gradient-1 to-portfolio-gradient-2">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-lilita text-4xl md:text-6xl text-portfolio-cream drop-shadow-lg mb-16">
+            CONTACT
+          </h2>
+          <div className="bg-portfolio-purple-mid border border-portfolio-purple-bright rounded-lg p-12 text-center">
+            <p className="font-lilita text-2xl text-portfolio-cream mb-6">
+              Contact information and form will be added here.
+            </p>
+            <p className="font-lilita text-xl text-portfolio-cream opacity-80">
+              Please continue prompting to help fill in the contact section content.
             </p>
           </div>
         </div>
