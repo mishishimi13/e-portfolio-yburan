@@ -158,13 +158,13 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {/* Education 1 */}
             <div className="bg-portfolio-purple-mid border border-portfolio-purple-bright rounded-lg overflow-hidden">
-              <div className="h-48 bg-red-600 flex items-center justify-center">
-                <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center">
-                  <div className="text-red-600 text-6xl font-bold">A</div>
+              <div className="h-56 bg-portfolio-purple-mid flex items-center justify-center p-4">
+                <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center border-4 border-red-600">
+                  <div className="text-red-600 text-5xl font-bold">A</div>
                 </div>
               </div>
               <div className="p-6 text-center">
-                <h3 className="font-lilita text-xl text-white mb-2">
+                <h3 className="font-lilita text-xl text-white mb-3 leading-tight">
                   Apolinario Mabini Elementary School
                 </h3>
                 <p className="font-lilita text-xl text-white">
@@ -175,16 +175,16 @@ export default function Index() {
 
             {/* Education 2 */}
             <div className="bg-portfolio-purple-mid border border-portfolio-purple-bright rounded-lg overflow-hidden">
-              <div className="h-48 bg-green-600 flex items-center justify-center">
-                <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center">
-                  <div className="text-green-600 text-4xl font-bold">NHS</div>
+              <div className="h-56 bg-portfolio-purple-mid flex items-center justify-center p-4">
+                <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center border-4 border-green-600">
+                  <div className="text-green-600 text-3xl font-bold">NHS</div>
                 </div>
               </div>
               <div className="p-6 text-center">
-                <h3 className="font-lilita text-xl text-white mb-2">
+                <h3 className="font-lilita text-xl text-white mb-3 leading-tight">
                   Negros Occidental High School
                 </h3>
-                <p className="font-lilita text-lg text-white">
+                <p className="font-lilita text-lg text-white leading-tight">
                   Junior High (S.Y. 2019-2020)<br />
                   Senior High (S.Y. 2021-2022)
                 </p>
@@ -193,14 +193,14 @@ export default function Index() {
 
             {/* Education 3 */}
             <div className="bg-portfolio-purple-mid border border-portfolio-purple-bright rounded-lg overflow-hidden">
-              <div className="h-48 bg-yellow-500 flex items-center justify-center">
-                <div className="text-blue-900 text-4xl font-bold">STI</div>
+              <div className="h-56 bg-yellow-500 flex items-center justify-center p-4">
+                <div className="text-blue-900 text-4xl font-bold bg-yellow-500 px-4 py-2 rounded">STI</div>
               </div>
               <div className="p-6 text-center">
-                <h3 className="font-lilita text-xl text-white mb-2">
+                <h3 className="font-lilita text-xl text-white mb-3 leading-tight">
                   STI WEST NEGROS UNIVERSITY
                 </h3>
-                <p className="font-lilita text-lg text-white">
+                <p className="font-lilita text-lg text-white leading-tight">
                   Bachelor of Science in Information Technology<br />
                   S.Y. 2025-2026
                 </p>
