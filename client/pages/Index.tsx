@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// Removed Link import since we're using smooth scrolling instead
 
 export default function Index() {
   const scrollToSection = (sectionId: string) => {
