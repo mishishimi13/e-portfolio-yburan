@@ -9,35 +9,43 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 14 100% 8%; /* Deep purple background */
+    --foreground: 52 100% 92%; /* Cream text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 286 100% 21%; /* Purple card background */
+    --card-foreground: 52 100% 92%; /* Cream text on cards */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 286 100% 21%;
+    --popover-foreground: 52 100% 92%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 300 100% 50%; /* Bright purple */
+    --primary-foreground: 52 100% 92%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 286 100% 21%;
+    --secondary-foreground: 52 100% 92%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 286 100% 21%;
+    --muted-foreground: 52 100% 92%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 300 100% 50%;
+    --accent-foreground: 52 100% 92%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 300 100% 50%; /* Purple border */
+    --input: 286 100% 21%;
+    --ring: 300 100% 50%;
 
     --radius: 0.5rem;
+
+    /* Custom portfolio colors */
+    --portfolio-cream: 52 100% 92%;
+    --portfolio-purple-dark: 14 100% 8%;
+    --portfolio-purple-mid: 286 100% 21%;
+    --portfolio-purple-bright: 300 100% 50%;
+    --portfolio-gradient-1: 291 100% 29%;
+    --portfolio-gradient-2: 14 100% 8%;
 
     --sidebar-background: 0 0% 98%;
 
