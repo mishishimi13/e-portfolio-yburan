@@ -94,53 +94,53 @@ export default function Index() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Skill 1: MS Office */}
-            <div className="bg-portfolio-purple-mid border border-portfolio-purple-bright rounded-lg p-8 text-center">
-              <div className="flex justify-center gap-4 mb-8">
-                <div className="w-20 h-20 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-2xl">
-                  P
-                </div>
+            <div className="bg-portfolio-purple-mid border border-portfolio-purple-bright rounded-lg p-8 text-center h-96">
+              <div className="flex justify-center items-center gap-2 mb-8 h-32">
                 <div className="flex flex-col gap-2">
-                  <div className="w-20 h-20 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-2xl">
-                    E
+                  <div className="w-16 h-16 bg-orange-600 rounded-md flex items-center justify-center text-white font-bold text-lg">
+                    P
                   </div>
                 </div>
-                <div className="w-20 h-20 bg-blue-800 rounded-lg flex items-center justify-center text-white font-bold text-2xl">
+                <div className="w-16 h-16 bg-green-600 rounded-md flex items-center justify-center text-white font-bold text-lg">
+                  E
+                </div>
+                <div className="w-16 h-16 bg-blue-800 rounded-md flex items-center justify-center text-white font-bold text-lg">
                   W
                 </div>
               </div>
-              <h3 className="font-bold text-2xl md:text-3xl text-white mb-4">
+              <h3 className="font-bold text-2xl text-white leading-tight">
                 Proficient in MS Word, Excel, and PowerPoint
               </h3>
             </div>
 
             {/* Skill 2: Design */}
-            <div className="bg-portfolio-purple-mid border border-portfolio-purple-bright rounded-lg p-8 text-center">
-              <div className="flex justify-center items-center gap-4 mb-8">
+            <div className="bg-portfolio-purple-mid border border-portfolio-purple-bright rounded-lg p-8 text-center h-96">
+              <div className="flex justify-center items-center gap-4 mb-8 h-32">
                 <div className="w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center">
                   <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M15.332 8.668a3.333 3.333 0 0 0 0-4.668 3.333 3.333 0 0 0-4.668 0L8.668 6.002a3.333 3.333 0 0 0 0 4.668 3.333 3.333 0 0 0 4.668 0l1.996-2.002zm-7.997 7.997a3.333 3.333 0 0 0 0 4.668 3.333 3.333 0 0 0 4.668 0L14.002 18.33a3.333 3.333 0 0 0 0-4.668 3.333 3.333 0 0 0-4.668 0l-2.002 1.996z"/>
                     <path d="m11.667 9.668-4.668 4.668a1.667 1.667 0 0 0 2.357 2.357l4.668-4.668a1.667 1.667 0 1 0-2.357-2.357z"/>
                   </svg>
                 </div>
-                <div className="font-lily-script text-5xl text-portfolio-purple-bright">
+                <div className="font-lily-script text-4xl text-portfolio-purple-bright">
                   Canva
                 </div>
               </div>
-              <h3 className="font-bold text-2xl md:text-3xl text-white mb-4">
+              <h3 className="font-bold text-2xl text-white leading-tight">
                 Basic Wireframing and Editing
               </h3>
             </div>
 
             {/* Skill 3: Programming */}
-            <div className="bg-portfolio-purple-mid border border-portfolio-purple-bright rounded-lg p-8 text-center">
-              <div className="flex justify-center mb-8">
+            <div className="bg-portfolio-purple-mid border border-portfolio-purple-bright rounded-lg p-8 text-center h-96">
+              <div className="flex justify-center mb-8 h-32 items-center">
                 <div className="w-20 h-20 bg-portfolio-purple-bright rounded-lg flex items-center justify-center">
                   <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
                   </svg>
                 </div>
               </div>
-              <h3 className="font-bold text-2xl md:text-3xl text-white mb-4">
+              <h3 className="font-bold text-2xl text-white leading-tight">
                 Java, HTML, CSS, Javascript, C++
               </h3>
             </div>
